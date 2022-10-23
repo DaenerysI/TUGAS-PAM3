@@ -1,22 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import Home from './src/layar/home';
+import HasilPage from './src/layar/HasilPage';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  state = {  }
-  render() { 
-    return (  
-      <View style = {{flex: 1}}>
-        <View style= {{backgroundColor : '#2196f3'}}>
-          <Text>Healing ID</Text>
-        </View>
-      </View>
+const Stack = createNativeStackNavigator();
+
+const App = () => {
+
+    return (
+        <NavigationContainer>
+            <Stack.Navigator initialRouteName='Home' screenOptions={{headerShown: false}}>
+                <Stack.Screen name="Home" component={Home} />
+                <Stack.Screen name="HasilPage" component={HasilPage} />
+            </Stack.Navigator>
+        </NavigationContainer>
     );
-  }
-}
- 
+};
+
+
 export default App;
