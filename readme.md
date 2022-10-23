@@ -13,5 +13,4 @@
     
 ## Link Download Aplikasi
    
-   [Aplikasi](https://drive.google.com/drive/folders/1CtbzjLxTaxbKeooYXwxx_etUSfcuPK1b?usp=sharin
-g)
+   [Aplikasi](https://drive.google.com/drive/folders/1CtbzjLxTaxbKeooYXwxx_etUSfcuPK1b?usp=sharing)
